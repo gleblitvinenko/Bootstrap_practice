@@ -14,13 +14,14 @@ header {
 }
 
 header,
-foooter {
+footer {
     background: url(..//img/pattern.png), -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
     background: url(..//img/pattern.png), var(--color1);
     background: url(..//img/pattern.png), -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
     background: url(..//img/pattern.png), linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
     filter: url(..//img/pattern.png), progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--color1), endColorstr=var(--color2), GradientType=1);
     background-size: contain;
+    
 }
 
 .itd_play {
@@ -84,17 +85,20 @@ foooter {
 
 /* About course */
 
-.about{
+.about,
+.shedule,
+.author,
+.buy {
     background-color: #eee;
 }
 
-.about i{
+.about i {
     font-size: 25px;
-    color: var(--color2); 
+    color: var(--color2);
 }
 
-.itd_circle{
-   margin: 0 auto 15px;
+.itd_circle {
+    margin: 0 auto 15px;
     width: 70px;
     height: 70px;
     border: 3px solid (--color2);
@@ -104,7 +108,7 @@ foooter {
     align-items: center;
 }
 
-.line{
+.line {
     width: 100px;
     height: 3px;
     background-color: var(--color1);
@@ -113,19 +117,64 @@ foooter {
 
 /* Color */
 
-.color1{
+.color1 {
     color: var(--color1)
 }
 
-.color2{
+.color2 {
     color: var(--color2)
 }
 
-.bg1{
+.bg1 {
     background-color: var(--color1);
 }
 
-.bg2{
-    background-color:var(--color2);
+.bg2 {
+    background-color: var(--color2);
 }
+
+/* forwhom */
+
+.forwhom h5 {
+    border: 3px solid var(--color1);
+    padding: 50px;
+}
+
+/* shedule */
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-white);
+    background-color: var(--color2);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+/* learning */
+
+.learning h5{
+    padding: 35px;
+    border: 3px solid var(--color1);
+}
+
+/* author */
+
+.author{
+    padding-bottom: 0;
+}
+
+.itd_img{
+    max-width: 260px;
+}
+
+/* reviews */
+
+.reviews img{
+    border: 3px solid var(--color1);
+}
+
+/* buy */
+
+
 
